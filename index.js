@@ -1,7 +1,7 @@
 const axios = require("axios");
 const { Worker, isMainThread, parentPort } = require("worker_threads");
 
-const TARGET_URL = "http://localhost:10617";
+const TARGET_URL = "http://localhost:10617"; // La URL a atacar
 const REQUESTS_PER_WORKER = 1000;
 
 async function sendRequests() {
